@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>myArchievement</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>R</span>ICKY <span>Y</span>EUNG</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="service.html" data-after="Service">Skills</a></li>
+            <li><a href="projects.html" data-after="Projects">Projects</a></li>
+            <li><a href="about.html" data-after="About">About</a></li>
+            <li><a href="contact.html" data-after="Contact">Contact</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="myArchievement.html">MyArchievement</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+  <!--MyArchievement Section-->
+  <section id="myarchievement">
+    <div class="myarchievement container">
+      <div class="myarchievement-header">
+        <div class="myarchievement-top">
+          <h1 class="section-title">My <span>Archievement</span></h1>
+          <p>In Septmber 2022, I was having an honor to be awarded as the best student of my subject
+          </p>
+        </div>
+        <div class="myarchievement-bottom">
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+
+
+              <div class="slide first">
+                <img src="./img/prize2.JPG" alt="">
+              </div>
+
+              <div class="slide ">
+                <img src="./img/prize.JPG" alt="">
+              </div>
+              <div class="slide ">
+                <img src="./img/prize3.JPG" alt="">
+              </div>
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+            </div>
+
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End of MyArchievement Section-->
+  <script src="./app.js"></script>
+
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 3){
+        counter = 1;
+      }
+    }, 4300);
+    </script>
+</body>
+
+</html>

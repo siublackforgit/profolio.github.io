@@ -634,6 +634,121 @@ color: white;
 }
 /*End contact Section */
 
+/* myArchievement Section */
+
+.myarchievement-top .section-title{
+	margin-top: 40px;
+}
+.myarchievement-top p{
+	text-align:center;
+	margin-bottom:  50px;
+	
+}
+
+.slider{
+	width:800px;
+	height:500px;
+	border-radius:10px;
+
+	overflow:hidden;
+	
+}
+
+.slides{
+	width:500%;
+	height:100%;
+	display:flex;
+	
+}
+
+.slides input{
+	display:none;
+
+}
+
+.slide {
+    width:20%;
+    transition:2s;
+}
+
+.slide img{
+	width:800px;
+	height:100%;
+}
+
+.navigation-manual{
+ position:absolute;
+ width:800px;
+ margin-top: -40px;
+ display:flex;
+ justify-content:center;
+
+}
+
+.manual-btn{
+	border: 2px solid crimson;
+	padding:5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navigation-auto{
+	position:absolute;
+	width:800px;
+	margin-top: 460px;
+	display:flex;
+	justify-content: center;
+}
+
+.navigation-auto div{
+	border: 2px solid crimson;
+	padding:5px;
+	border-radius: 10px;
+	cursor:pointer;
+	transition: 1s;
+	
+}
+
+.navigation-auto div:not(last-child){
+	margin-left:40px;
+}
+.manual-btn:hover{
+	background: crimson;
+}
+.manual-btn:not(last-child){
+	margin-left:40px;
+}
+
+#radio1:checked ~ .first{
+	margin-left:0;
+}
+
+#radio2:checked ~ .first{
+	margin-left:-20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+#radio1:checked ~  .navigation-auto .auto-btn1{
+	background-color: crimson;
+  }
+  
+  #radio2:checked ~ .navigation-auto  .auto-btn2{
+	background-color: crimson;
+  }
+  
+  #radio3:checked ~ .navigation-auto  .auto-btn3{
+	background-color: crimson;
+  }
+  
+ 
+
+
+
+/* End myArchievement Section */
 /* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
