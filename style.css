@@ -444,6 +444,7 @@ color: white;
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
+	margin-top: 130px;
 	padding: 100px 0;
 }
 #projects .projects-header h1 {
@@ -459,18 +460,16 @@ color: white;
 #projects .project-item {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
-	width: 80%;
+	justify-content: center;	
+	width: 70%;	
 	overflow: hidden;
-	margin: 20px auto;
-	
+	margin: 20px auto;	
 	border-radius: 10px;
 }
 #projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	width:100%;
+	padding: 30px;	
+	width:100%;	
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -505,7 +504,7 @@ color: white;
 	color: white;
 }
 #projects .project-img {
-	flex-basis: 50%;
+	
 	width:100%;
 	overflow: hidden;
 	position: relative;
@@ -532,6 +531,12 @@ color: white;
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
+}
+
+@media screen and ( max-width:768px) {
+	#projects .projects{
+		margin-top: 50px;
+	}
 }
 /* End Projects section */
 
@@ -886,6 +891,7 @@ color: white;
 
 .cv-title{
 	margin-top:180px;
+
 	text-align: center;
 }
 
@@ -897,6 +903,39 @@ color: white;
 
 .cv-title h1 span{
 	color:crimson;
+}
+
+.cv-title p{
+	margin-bottom:20px;
+}
+
+.cv-content{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.cv-content img{
+	margin:0 auto;
+ width:500px;
+}
+
+.cv-content a{
+	display:inline-block;
+	width:auto;
+	text-decoration: none;
+	color:black;
+	border: 2px solid ;
+	padding: 10px 30px;
+	border-radius: 20px;
+	margin:20px auto;
+	transition: all 0.3s ease-in-out ;
+}
+
+.cv-content a:hover{
+ transform: scale(1.1);
+ color:crimson;
+ border-color:crimson
 }
 
 
